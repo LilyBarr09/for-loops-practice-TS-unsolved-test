@@ -11,8 +11,15 @@
  * Example: getNumbersWithSquareRoots(17) => [0, 1, 4, 9, 16]
  */
 
-export function getNumbersWithSquareRoots(max) {
+export function getNumbersWithSquareRoots(max: number) {
   // Your code goes here...
+  const squareRootInteger: number[] = [];
+  for (let i: number = 0; i <= max; i++) {
+    if (Number.isInteger(Math.sqrt(i))) {
+      squareRootInteger.push(i);
+    }
+  }
+  return squareRootInteger;
 }
 
 // === TEST YOURSELF ===
