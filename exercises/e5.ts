@@ -12,7 +12,13 @@
  */
 
 // Declare a type here...
-export type BankAccount = {};
+export type BankAccount = {
+  id: number;
+  name: string;
+  balance: number;
+  deposits?: number[];
+  withdrawals?: number[];
+};
 
 /**
  * @task
